@@ -1,0 +1,733 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Fredoka, Geneva, Tahoma, sans-serif;
+    background-color: rgba(189, 242, 129, 0.234);
+    color: rgb(98, 128, 0);
+}
+
+.scroll-watcher {
+    height: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(84, 210, 153);
+    width: 100%;
+    transform: scale(0, 1);
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+
+
+
+}
+
+@keyframes scroll-watcher {
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+header {
+    position: sticky;
+}
+
+.headintro {
+    font-size: 2em;
+    text-align: center;
+    background-color: hsla(0, 4%, 15%, 0.911);
+    color: rgb(250, 250, 250);
+    padding: 10px;
+    font-family: Fredoka, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+/* Stylinging the navbar */
+.navbar {
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+
+}
+
+.navbar a {
+    font-family: Fredoka, Geneva, Tahoma, sans-serif;
+    color: hsla(0, 4%, 15%, 0.911);
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+.navbar a.active {
+    background-color: hsla(120, 100%, 82%, 0.793);
+    font-weight: bold;
+    border-radius: 5px;
+
+
+}
+
+.navbar a:hover:not(.active) {
+    background-color: hsla(120, 100%, 82%, 0.793);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.content a {
+    display: block;
+    color: hsla(0, 4%, 15%, 0.995);
+    ;
+}
+
+.content {
+    background-color: hsla(120, 100%, 88%, 0.864);
+    position: absolute;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.81);
+    display: none;
+}
+
+.navbar :nth-child(5):hover .dropdown {
+    display: block;
+}
+
+footer {
+    background-color: hsla(0, 4%, 15%, 0.911);
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: fredoka;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+
+}
+
+.box {
+    width: 300px;
+    height: 450px;
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: 2px 2px 5px;
+
+}
+
+#box1 {
+    background-image: url(img/pexels-ishara-kasthuriarachchi-10023955.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box2 {
+    background-image: url(img/pexels-petr-ganaj-4032590.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box3 {
+    background-image: url(img/pexels-ishara-kasthuriarachchi-6031391.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#box4 {
+    background-image: url(img/pexels-hugo-sykes-15821221.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.mainintro {
+    text-align: center;
+
+}
+
+.mainintro h2 {
+    font-size: 2em;
+
+}
+
+.mainintro p {
+    font-size: 1.45em;
+}
+
+#subtopic {
+    text-align: center;
+    font-family: fredoka;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: underline dotted;
+    font-size: 2em;
+}
+
+/* styling the subsections */
+.sections {
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: fredoka;
+    /* box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.81); */
+    align-items: center;
+}
+
+.sub {
+    text-align: justify;
+    width: 600px;
+    height: 350px;
+    border-radius: 15px;
+    padding: 15px;
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 3px;
+    margin: 5px;
+
+}
+
+.sub h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#sub1 {
+    background-image: url(img/GettyRF_999182464.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#sub2 {
+    background-image: url(img/tourism-sri-lanka-flora-fauna-leopard-tourismsrilanka.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sections h2 {
+    font-size: 1.75em;
+    text-decoration: underline dotted;
+
+}
+
+.sections p {
+    font-size: 1.25em;
+}
+
+.sections li {
+    font-size: 1.25em;
+}
+
+#sub3,
+#sub2,
+#sub5,
+#sub8 {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+#sub5 {
+    background-image: url(img/sri-lankan-junglefowl-sri-lanka-945x630.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#sub6 {
+    background-image: url(img/A88J5058-Sloth-bear-Wilpattu-2-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#sub7 {
+    background-image: url(img/pexels-kammeran-gonzalezkeola-17823425.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#sub8 {
+    background-image: url(img/Jaguars_pair_20190726141429_20190726141523.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.intro {
+    text-align: center;
+    background-color: rgba(144, 199, 137, 0.671);
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+/* department of wildlife page styling */
+#depimg {
+    width: 80%;
+    max-height: 300px;
+}
+
+.depmain {
+    text-align: justify;
+}
+
+.depmain p {
+    font-size: 1.25em;
+}
+
+.deparea {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 5px;
+    border-radius: 15px;
+}
+
+.area {
+    width: 350px;
+    height: 350px;
+    margin: 5px;
+
+    color: whitesmoke;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.proarea,
+#parks {
+    text-align: center;
+    font-size: 1.75em;
+    padding-top: 15px;
+}
+
+#parks {
+    text-decoration: underline dotted;
+}
+
+#area1 {
+    background-image: url(img/wilpattu-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#area2 {
+    background-image: url(img/wildlife-img-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#area3 {
+    background-image: url(img/Half\ Day\ Tours\ \ Udawalawe\ National\ Park\ Safari.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#area4 {
+    background-image: url(img/unnamed.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#area5 {
+    background-image: url(img/YalaSriLankaSafariepb0310.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+#area6 {
+    background-image: url(img/Sambar-VW-2-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#area7 {
+    background-image: url(img/what-to-do-in-hikkaduwa-sea-turtle-hatchery-1024x768.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#area8 {
+    background-image: url(img/kumana_bird_sactuary1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+#depl {
+    width: 800px;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* styling the introduction page */
+.intromain {
+    display: grid;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 300px 300px;
+    text-align: center;
+
+    font-size: 1.25em;
+    box-shadow: 4px 4px 5px;
+    border-radius: 15px;
+}
+
+.introm {
+    border-radius: 15px;
+    padding: 5px;
+}
+
+#intro1,
+#intro7,
+#intro13,
+#intro19 {
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2.5px;
+    grid-row: 1/2;
+    grid-column: 1/3;
+
+}
+
+#intro2,
+#intro8,
+#intro14,
+#intro20 {
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2.5px;
+    grid-row: 1/2;
+    grid-column: 3/5;
+}
+
+#intro3 {
+
+    grid-column: 1/2;
+    background-image: url(img/wasgamuwa01.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#intro4 {
+
+    grid-column: 2/3;
+    background-image: url(img/inora-travel-lanka-wasgamuwa-national-park-1.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#intro5 {
+
+    grid-column: 3/4;
+    background-image: url(img/18.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#intro6 {
+
+    grid-column: 4/5;
+    background-image: url(img/bundala-national-park-3.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.parkname {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 2em;
+    text-decoration: underline dotted;
+}
+
+#intro9 {
+    grid-column: 1/2;
+    background-image: url(img/caption.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#intro10 {
+
+    grid-column: 2/3;
+    background-image: url(img/minneriya-safari-18.jpg);
+
+    background-position: center;
+    background-size: cover;
+
+}
+
+#intro11 {
+
+    grid-column: 3/4;
+    background-image: url(img/72.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#intro12 {
+
+    grid-column: 4/5;
+    background-image: url(img/80598.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#intro2 iframe,
+#intro8 iframe,
+#intro14 iframe,
+#intro20 iframe {
+    width: 95%;
+    height: 95%;
+    border-radius: 15px;
+}
+
+#intro15 {
+    grid-column: 1/2;
+    background-image: url(img/75.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#intro16 {
+
+    grid-column: 2/3;
+    background-image: url(img/4635_1024x1024_2013-07-16-20-32-20-870x480-1.jpg);
+
+    background-position: center;
+    background-size: cover;
+
+}
+
+#intro17 {
+
+    grid-column: 3/4;
+    background-image: url(img/5d92c58f2c7ffe09ed4d5d14w800.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#intro18 {
+
+    grid-column: 4/5;
+    background-image: url(img/^68578F272DF18269049F600318002F2EF7D302DEC3A4772B2B^pimgpsh_fullsize_distr.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#intro21 {
+    grid-column: 1/2;
+    background-image: url(img/VW-16.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#intro22 {
+
+    grid-column: 2/3;
+    background-image: url(img/IMG_0415.JPG);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#intro23 {
+
+    grid-column: 3/4;
+    background-image: url(img/sri-lankan-leopard-panthera-paradus-kotiya.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#intro24 {
+
+    grid-column: 4/5;
+    background-image: url(img/47.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.introtable {
+    border: 2px solid #333;
+    border-radius: 15px;
+    text-align: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    font-size: 1.27em;
+}
+
+.introimg {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+
+
+}
+
+.introtable th {
+    border: 2px solid #333;
+    border-radius: 8px;
+    gap: 0.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.introtable td {
+    border: 2px solid #333;
+    border-radius: 8px;
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .introtable {
+        width: 100%;
+    }
+}
+
+/* Styling the leopard page */
+.places {
+    display: grid;
+    justify-content: center;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px 350px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 5px;
+}
+
+.plac {
+    text-align: justify;
+    margin: 5px;
+    box-shadow: 2px 2px 5px;
+    color: rgb(0, 0, 0);
+    font-size: 1.25em;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+#plac2 {
+    background-image: url(img/512fb876c8821db74a44d58b3a9ca1ea10dcfad9.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+#plac4 {
+    background-image: url(img/e2klrj4kwprb1.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+#plac6 {
+    background-image: url(img/MG_4757-1038x576.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+
+.threats {
+    display: grid;
+    justify-content: center;
+    margin-top: 25px;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    flex-wrap: wrap;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 350px 350px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 5px;
+}
+
+.threat {
+    text-align: justify;
+    margin: 5px;
+    box-shadow: 2px 2px 5px;
+    color: rgb(0, 0, 0);
+    font-size: 1.25em;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+
+
+#tr2 {
+    background-image: url(img/1308584414leoskin2snare.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-row: 1/2;
+    grid-column: 2/3;
+
+}
+
+#tr3 {
+    background-image: url(img/0_nbiqDH1i6RbvM8Mg.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .places {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    .plac {
+        font-size: 1em;
+    }
+    .threats {
+        display: flex;
+        width:  100%;
+        height: auto;
+        
+    }
+    
+
+    .threat {
+        font-size: 1em;
+    }
+}
